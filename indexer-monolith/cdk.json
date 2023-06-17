@@ -1,0 +1,18 @@
+{
+  "app": "npx ts-node bin/port-api.ts",
+  "context": {
+    "eth_goreli": {
+      "aclhemyApiKey": "uZaCrnLBDS8P2lvmrcVmDfyo05CZ-4Di",
+      "eventName": "EthGoreliBlockReceived",
+      "chainName": "ETH_GORELI"
+    },
+    "sql": {
+      "dialect": "mysql",
+      "host": "database-1.co9muppsw2mx.us-east-1.rds.amazonaws.com",
+      "port": "3306",
+      "username": "admin",
+      "password": "Aslan190$",
+      "database": "Test"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "port-api",
+  "version": "0.1.0",
+  "bin": {
+    "port-api": "bin/port-api.js"
+  },
+  "scripts": {
+    "build": "npm run clean && mkdir dist && mkdir dist/src && cp package.json ./dist/ && cd dist && npm install --production && cd ../ && tsc &&  cd dist && zip -rq lambda.zip .",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.109",
+    "@types/node": "10.17.27",
+    "@types/qs": "^6.9.7",
+    "aws-cdk": "2.55.1",
+    "aws-sdk": "2.1279.0",
+    "typescript": "~4.9.4"
+  },
+  "dependencies": {
+    "alchemy-sdk": "^2.2.5",
+    "aws-lambda": "^1.0.7",
+    "mysql2": "^2.3.3",
+    "sequelize": "6.28.0",
+    "tedious": "^11.0.8",
+    "web3": "^1.8.1"
+  }
+}
