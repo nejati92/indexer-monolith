@@ -4,7 +4,7 @@ const connection = new Sequelize({
   host: "database-1.co9muppsw2mx.us-east-1.rds.amazonaws.com",
   port: 3306,
   username: "admin",
-  password: "Aslan190$",
+  password: "",
   database: "Test",
 });
 
